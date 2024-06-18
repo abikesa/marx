@@ -3,4 +3,4 @@
 <iframe src="https://abikesa.github.io/uganda/" width="100%" height="600px" style="border:none;"></iframe>
 
 - peasant = labor
-- farmer = tools
+- farmer = [tools](https://abikesa.github.io/means/)
