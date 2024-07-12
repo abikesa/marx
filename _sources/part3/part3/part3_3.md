@@ -31,7 +31,7 @@ width: 1
  
                               1. Muse
                                       \
-                         2. Genre ->  4. Artists -> 5. Patron -> 6. Shipment
+                         2. Genre ->  4. Art -> 5. Canvas -> 6. Shipment
                                       /
                                       3. Tools
 
