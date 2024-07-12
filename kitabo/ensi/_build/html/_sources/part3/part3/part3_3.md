@@ -26,3 +26,20 @@ width: 1
 
 - peasant = labor
 - farmer = [unintelligent-tools](https://abikesa.github.io/means/)
+
+>  Real artists ship. But for that, even van Gogh needed capital from his brother
+ 
+                              1. Muse
+                                      \
+                         2. Genre ->  4. Artists -> 5. Patron -> 6. Shipment
+                                      /
+                                      3. Tools
+
+
+```{figure} ../../figures/blanche.png
+---
+height: 1
+width: 1
+---
+**_Life, art, science, ideals_**. A method to the madness of human life
+`````
