@@ -397,10 +397,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-market-hypothesis"><code class="docutils literal notranslate"><span class="pre">Efficient-Market</span> <span class="pre">Hypothesis</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-1-2-3">Null 1, 2, 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse 4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-5-6">Alternative 5, 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-market-hypothesis">Efficient-Market Hypothesis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-null-1-2-3-mu"><code class="docutils literal notranslate"><span class="pre">ii</span></code>: Null 1, 2, 3, <span class="math notranslate nohighlight">\(\mu\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#v7-sing-o-muse-4-sigma"><code class="docutils literal notranslate"><span class="pre">V7</span></code>: Sing O Muse 4, <span class="math notranslate nohighlight">\(\sigma\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-alternative-5-6"><code class="docutils literal notranslate"><span class="pre">i</span></code>: Alternative 5, 6, <span class="math notranslate nohighlight">\(\%\)</span></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-case">Base-case</a><ul class="nav section-nav flex-column">
@@ -430,10 +430,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="black-scholes">
 <span id="id1"></span><h1>Black-Scholes<a class="headerlink" href="#black-scholes" title="Permalink to this heading">#</a></h1>
-<blockquote>
-<div><p><em>Call option price is analogous to the difference between the <code class="docutils literal notranslate"><span class="pre">base-case</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">clinical-scenario</span></code>; i.e., <code class="docutils literal notranslate"><span class="pre">logHR</span></code>. In clinical medicine, we’ve kept our cumulative distribution functions non-parametric, at least for our base-case (62,000 citations: <a class="reference external" href="https://scholar.google.com/scholar?hl=en&amp;amp;as_sdt=0%2C21&amp;amp;q=Regression+Models+and+Life-Tables.%22&amp;amp;btnG=">Google Scholar</a>)</em></p>
-</div></blockquote>
-  <iframe src="../pdfs/cox.pdf" height="100px" width="100%" style="borders:none"></iframe>
+<section id="efficient-market-hypothesis">
+<h2>Efficient-Market Hypothesis<a class="headerlink" href="#efficient-market-hypothesis" title="Permalink to this heading">#</a></h2>
+  <iframe src="../pdfs/cox.pdf" height="500px" width="100%" style="borders:none"></iframe>
 <div class="math notranslate nohighlight">
 \[
 C(S, t) = S_0 \mathcal{N}(d_1) - X e^{-r(T-t)} \mathcal{N}(d_2)
@@ -447,7 +446,6 @@ d_1 = \frac{\ln(S_0/X) + (r + \sigma^2/2)(T-t)}{\sigma \sqrt{T-t}}
 \[
 d_2 = d_1 - \sigma \sqrt{T-t}
 \]</div>
-<p>Here, <span class="math notranslate nohighlight">\(C\)</span> is the call option price, <span class="math notranslate nohighlight">\(S_0\)</span> is the current stock price, <span class="math notranslate nohighlight">\(X\)</span> is the strike price, <span class="math notranslate nohighlight">\(r\)</span> is the risk-free interest rate, <span class="math notranslate nohighlight">\(T\)</span> is the time to maturity, <span class="math notranslate nohighlight">\(\sigma\)</span> is the volatility of the stock, and <span class="math notranslate nohighlight">\(\mathcal{N}(\cdot)\)</span> is the cumulative distribution function of the standard normal distribution.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>       1. Chaos
                \
   2. Frenzy -&gt; 4. Unpredictable -&gt; 5. Algorithm -&gt; 6. Binary
@@ -458,30 +456,36 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
   <iframe src="https://www.youtube.com/embed/A5w-dEgIU1M?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
-<section id="efficient-market-hypothesis">
-<h2><code class="docutils literal notranslate"><span class="pre">Efficient-Market</span> <span class="pre">Hypothesis</span></code><a class="headerlink" href="#efficient-market-hypothesis" title="Permalink to this heading">#</a></h2>
-<section id="null-1-2-3">
-<h3>Null 1, 2, 3<a class="headerlink" href="#null-1-2-3" title="Permalink to this heading">#</a></h3>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Black-Scholes-Merton</em>. <strong>Call option price</strong> is analogous to the difference between the <code class="docutils literal notranslate"><span class="pre">base-case</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">clinical-scenario</span></code>; i.e., <code class="docutils literal notranslate"><span class="pre">logHR</span></code>. In clinical medicine, we’ve kept our cumulative distribution functions non-parametric, at least for our base-case (62,000 citations: <a class="reference external" href="https://scholar.google.com/scholar?hl=en&amp;amp;as_sdt=0%2C21&amp;amp;q=Regression+Models+and+Life-Tables.%22&amp;amp;btnG=">Google Scholar</a>) <span id="id2"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id3" title="Fischer Black and Myron Scholes. The pricing of options and corporate liabilities. Journal of Political Economy, 81(3):637–654, 1973.">34</a></sup></span> <span id="id3"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id4" title="David R Cox. Regression models and life-tables. Journal of the Royal Statistical Society: Series B (Methodological), 34(2):187–202, 1972.">35</a></sup></span>. Here, <span class="math notranslate nohighlight">\(C\)</span> is the call option price, <span class="math notranslate nohighlight">\(S_0\)</span> is the current stock price, <span class="math notranslate nohighlight">\(X\)</span> is the strike price, <span class="math notranslate nohighlight">\(r\)</span> is the risk-free interest rate, <span class="math notranslate nohighlight">\(T\)</span> is the time to maturity, <span class="math notranslate nohighlight">\(\sigma\)</span> is the volatility of the stock, and <span class="math notranslate nohighlight">\(\mathcal{N}(\cdot)\)</span> is the cumulative distribution function of the standard normal distribution.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="ii-null-1-2-3-mu">
+<h3><code class="docutils literal notranslate"><span class="pre">ii</span></code>: Null 1, 2, 3, <span class="math notranslate nohighlight">\(\mu\)</span><a class="headerlink" href="#ii-null-1-2-3-mu" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Voir</span></code>: Random brownian motion as seen in digital information from Bloomberg Terminal; <span class="math notranslate nohighlight">\(\text{H}_0:\)</span> <code class="docutils literal notranslate"><span class="pre">logHR=0</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Savoir</span></code>: Compute may find patterns than Eugene Fama’s mind couldn’t</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Pouvoir</span></code>: <span class="math notranslate nohighlight">\(\mu | \text{X}\beta\)</span> ; <span class="math notranslate nohighlight">\(\sigma | t\)</span>; two overlayed multivariable <em>Kaplan-Meier’s</em></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(t)\)</span> <code class="docutils literal notranslate"><span class="pre">Voir</span></code>: Random brownian motion as seen in digital information from Bloomberg Terminal; <span class="math notranslate nohighlight">\(\text{H}_0:\)</span> <code class="docutils literal notranslate"><span class="pre">logHR=0</span></code></p></li>
+<li><p><span class="math notranslate nohighlight">\(S(t)\)</span> <code class="docutils literal notranslate"><span class="pre">Savoir</span></code>: Compute may find patterns that Eugene Fama’s mind couldn’t</p></li>
+<li><p><span class="math notranslate nohighlight">\(h(t)\)</span> <code class="docutils literal notranslate"><span class="pre">Pouvoir</span></code>: <span class="math notranslate nohighlight">\(\mu | \text{X}\beta\)</span> ; <span class="math notranslate nohighlight">\(\sigma | t\)</span>; two overlayed multivariable <em>Kaplan-Meier’s</em></p></li>
 </ul>
 </section>
-<section id="sing-o-muse-4">
-<h3>Sing O Muse 4<a class="headerlink" href="#sing-o-muse-4" title="Permalink to this heading">#</a></h3>
+<section id="v7-sing-o-muse-4-sigma">
+<h3><code class="docutils literal notranslate"><span class="pre">V7</span></code>: Sing O Muse 4, <span class="math notranslate nohighlight">\(\sigma\)</span><a class="headerlink" href="#v7-sing-o-muse-4-sigma" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Unpredictable</span></code>: Estimates <strong>conditional</strong> on factors millions of orders of magnitude more than human mind “tameth”; no wonder there’s been <strong>gnashing of teeth</strong></p></li>
+<li><p><span class="math notranslate nohighlight">\((X'X)^T \cdot X'Y\)</span> <code class="docutils literal notranslate"><span class="pre">Unpredictable</span></code>: Estimates <strong>conditional</strong> on factors millions of orders of magnitude more than human mind “tameth”; no wonder there’s been <strong>gnashing of teeth</strong></p></li>
 </ul>
 </section>
-<section id="alternative-5-6">
-<h3>Alternative 5, 6<a class="headerlink" href="#alternative-5-6" title="Permalink to this heading">#</a></h3>
+<section id="i-alternative-5-6">
+<h3><code class="docutils literal notranslate"><span class="pre">i</span></code>: Alternative 5, 6, <span class="math notranslate nohighlight">\(\%\)</span><a class="headerlink" href="#i-alternative-5-6" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Identity</span></code>: Some quants, programmers, and algorithms have produced better returns than the null-hypothesis over decades</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Achievements</span></code>: Using super-human <code class="docutils literal notranslate"><span class="pre">AI</span></code> capabilities of machines to handle <span class="math notranslate nohighlight">\(N^N\)</span> <strong>parameters</strong>, <a class="reference external" href="https://en.wikipedia.org/wiki/Jim_Simons#Controversies">Jim Simmons</a> is the best way to summarize this</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> <code class="docutils literal notranslate"><span class="pre">Identity</span></code>: Some quants, programmers, and algorithms have produced better returns than the null-hypothesis over decades</p></li>
+<li><p><span class="math notranslate nohighlight">\(SV_t'\)</span> <code class="docutils literal notranslate"><span class="pre">Achievements</span></code>: Using super-human <code class="docutils literal notranslate"><span class="pre">AI</span></code> capabilities of machines to handle <span class="math notranslate nohighlight">\(N^N\)</span> <strong>parameters</strong>, <a class="reference external" href="https://en.wikipedia.org/wiki/Jim_Simons#Controversies">Jim Simmons</a> is the best way to summarize this</p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<Details>
+   <Summary></Summary>
 <ul class="simple">
 <li><p>Simulated: essentially conjuring order (parameters) from chaos (random variation)</p></li>
 <li><p>Real: can a perfect simulation be <code class="docutils literal notranslate"><span class="pre">identified</span></code> or distinguished from real data?</p></li>
@@ -489,7 +493,8 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 <li><p>Imputation: we are doing it anyway, e.g. complete data analysis, so this lays an iterative roadmaps to better inferences</p></li>
 <li><p>Names: the whole Donny misunderstanding Lenin for John Lennon part is just pure genius. I am the walrus hahahahah</p></li>
 </ul>
-</div>
+</Details>
+</aside>
 </section>
 </section>
 <section id="base-case">
@@ -509,13 +514,13 @@ d_1 = \frac{\ln(S_0/X) + (r + \sigma^2/2)(T-t)}{\sigma \sqrt{T-t}}
 \[
 d_2 = d_1 - \sigma \sqrt{T-t}
 \]</div>
-<div class="cell tag_hide-input docutils container">
+<div class="cell tag_hide-input tag_hide-output docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
 <span class="expanded">Hide code cell source</span>
 </summary>
-<div class="cell_input docutils container">
+<div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># courtesy of meta.ai</span>
 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -549,6 +554,11 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 </div>
 </div>
 </details>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <img alt="../_images/bc58f1bfb756c01b94a0b1b6dc9f58dd2e8ade66f01206224dfd41e18c8c8fb6.png" src="../_images/bc58f1bfb756c01b94a0b1b6dc9f58dd2e8ade66f01206224dfd41e18c8c8fb6.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       _st  _d         _t  _t0  s0_nondonor
@@ -568,18 +578,30 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 </section>
 <section id="beta-coefficients">
 <h2>Beta Coefficients<a class="headerlink" href="#beta-coefficients" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<div class="cell tag_hide-input tag_hide-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/b_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b_df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   A         B  C         D  E         F  G         H         I  J  ...  AW  \
 0  0  0.361154  0  0.299617  0 -0.139638  0  0.124114  0.438236  0  ...   0   
@@ -594,9 +616,15 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 </pre></div>
 </div>
 </div>
+</details>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<div class="cell tag_hide-input tag_hide-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="c1"># Define the meaningless headers and data provided</span>
@@ -639,13 +667,19 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 <span class="n">variable_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;extra_label&quot;</span><span class="p">)</span>
 
 <span class="c1"># Apply the variable names to the DataFrame</span>
-<span class="n">b_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">variable_names</span>
+<span class="n">b_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">variable_nam</span>
 
 <span class="c1"># Display the DataFrame</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b_df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   diabetes_no  diabetes_yes  insulin_no  insulin_yes  dia_pill_no  \
 0            0      0.361154           0     0.299617            0   
@@ -666,17 +700,29 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 <section id="scenario-vector">
 <h2>Scenario Vector<a class="headerlink" href="#scenario-vector" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<div class="cell tag_hide-input tag_hide-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">SV_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/SV_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">SV_df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   SV_nondonor1  SV_nondonor2  SV_nondonor3  SV_nondonor4  SV_nondonor5  \
 0             1             0             1             0             0   
@@ -694,6 +740,7 @@ d_2 = d_1 - \sigma \sqrt{T-t}
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -961,7 +1008,7 @@ git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </
 <figure class="align-default" id="banner-welcome">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nietzsche_paul-ree_lou-von-salome188.jpg/220px-Nietzsche_paul-ree_lou-von-salome188.jpg"><img alt="Two people, a woman and a man, waving next to a banner that says - welcome." src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nietzsche_paul-ree_lou-von-salome188.jpg/220px-Nietzsche_paul-ree_lou-von-salome188.jpg" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text"><em>Power dynamics :)</em></span><a class="headerlink" href="#banner-welcome" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><em>Power dynamics</em>. Maintaining cheerfulness in the midst of a gloomy task, fraught with immeasurable responsibility, is no small feat; and yet what is needed more than cheerfulnenss? Nothing succeeds if prankishness has no part in it. Excess strength alone is hte proof of strength. <span id="id4"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id2" title="Friedrich Nietzsche. Twilight of the Idols. Arcadia eBook, info&#64;arcadiaebook.com, 2016. Emphasizes the importance of maintaining cheerfulness in challenging tasks and the role of excess strength as proof of power.">36</a></sup></span></span><a class="headerlink" href="#banner-welcome" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <iframe src="../pdfs/mozart.pdf" width="100%" height="1000" style="borders:none"></iframe>
@@ -1017,10 +1064,10 @@ git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-market-hypothesis"><code class="docutils literal notranslate"><span class="pre">Efficient-Market</span> <span class="pre">Hypothesis</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-1-2-3">Null 1, 2, 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse 4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-5-6">Alternative 5, 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-market-hypothesis">Efficient-Market Hypothesis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-null-1-2-3-mu"><code class="docutils literal notranslate"><span class="pre">ii</span></code>: Null 1, 2, 3, <span class="math notranslate nohighlight">\(\mu\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#v7-sing-o-muse-4-sigma"><code class="docutils literal notranslate"><span class="pre">V7</span></code>: Sing O Muse 4, <span class="math notranslate nohighlight">\(\sigma\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-alternative-5-6"><code class="docutils literal notranslate"><span class="pre">i</span></code>: Alternative 5, 6, <span class="math notranslate nohighlight">\(\%\)</span></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-case">Base-case</a><ul class="nav section-nav flex-column">
